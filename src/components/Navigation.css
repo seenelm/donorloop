@@ -1,0 +1,234 @@
+.header-container {
+  background-color: var(--header-bg, rgba(255, 255, 255, 0.95));
+  padding: 12px 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.logo {
+  height: 28px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 5px;
+  background-color: var(--secondary-color, #f8f9fa);
+  border-radius: 30px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link {
+  color: var(--text-color, #333);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--primary-color, #30DFA3);
+}
+
+.nav-link.active {
+  background-color: var(--white, #fff);
+  color: var(--primary-color, #30DFA3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.cta-button {
+  background-color: var(--primary-color, #30DFA3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-hover, #27c48d);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger button */
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  position: relative;
+  margin-left: auto;
+}
+
+.hamburger-button span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: var(--text-color, #333);
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hamburger-button span:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger-button.active span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-button.active span:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--card-bg, #fff);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-nav-link {
+  color: var(--text-color, #333);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 24px;
+  transition: all 0.3s;
+  text-align: center;
+  width: 100%;
+}
+
+.mobile-nav-link:hover {
+  color: var(--primary-color, #30DFA3);
+}
+
+.mobile-nav-link.active {
+  color: var(--primary-color, #30DFA3);
+  font-weight: 600;
+}
+
+.mobile-nav-link.dashboard-link {
+  color: var(--primary-color, #30DFA3);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: var(--text-color, #333);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav,
+  .desktop-cta {
+    display: none;
+  }
+  
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .hamburger-button span {
+    background-color: var(--primary-color, #30DFA3);
+    width: 28px;
+    height: 3px;
+    margin-bottom: 6px;
+  }
+  
+  .header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .nav {
+    display: none;
+  }
+}

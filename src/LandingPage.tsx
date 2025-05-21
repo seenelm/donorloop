@@ -1,39 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
-import givinLogo from './assets/givin-logo.png';
-import givinLogoBlack from './assets/givin-logo-black.png';
 import InteractiveMockup from './InteractiveMockup';
 
 const LandingPage: React.FC = () => {
   return (
     <div className="landing-page">
-      {/* Header */}
-      <div className="header-container">
-        <header className="header">
-          <img src={givinLogo} alt="Givin Logo" className="logo" />
-          
-          <nav className="nav">
-            <a href="#" className="nav-link active">Home</a>
-            <a href="#" className="nav-link">About</a>
-            <a href="#" className="nav-link">Pricing</a>
-            <a href="#" className="nav-link">Contact Us</a>
-          </nav>
-          
-          <button className="cta-button">Get Started</button>
-        </header>
-      </div>
+      {/* No header here - using shared Navigation component */}
       
       <div className="container">
         
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-content">
-            <img src={givinLogoBlack} alt="Givin Logo" className="logo" style={{ marginBottom: '20px' }} />
             <h1 className="hero-title">Your AI Assistant for Fundraising</h1>
             <p className="hero-subtitle">Upload your organization's data and unlock powerful insights to boost your fundraising efforts</p>
             
             <div className="hero-buttons">
-              <button className="cta-button">Try Givin Free</button>
+              <a href="https://app.givin.io" className="cta-button">Try Givin Free</a>
               <button className="secondary-button">
                 Learn how it works
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
