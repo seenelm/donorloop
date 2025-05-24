@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import givinLogo from '../assets/givin-logo.png';
+import givinLogo from '../assets/givin-logo.svg';
 import '../styles/theme.css';
 import './Navigation.css';
 
