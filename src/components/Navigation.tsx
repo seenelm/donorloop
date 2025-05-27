@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import givinLogo from '../assets/givin-logo.svg';
+import logo from '../assets/logo.svg';
 import '../styles/theme.css';
 import './Navigation.css';
 
@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
     <div className="header-container">
       <header className="header">
         <Link to="/">
-          <img src={givinLogo} alt="Givin Logo" className="logo" />
+          <img src={logo} alt="Givin Logo" className="logo" />
         </Link>
         
         {/* Desktop Navigation */}

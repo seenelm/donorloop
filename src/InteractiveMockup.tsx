@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-// Using a string path for the image to avoid TypeScript errors
-const givinLogoBlack = '/src/assets/givin-logo-black.png';
+import logo from './assets/logo.svg';
 
 interface InteractiveMockupProps {
   className?: string;
@@ -88,7 +87,7 @@ const InteractiveMockup: React.FC<InteractiveMockupProps> = ({ className }) => {
       <div className="app-content">
         {/* <div className="app-header">
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src={givinLogoBlack} alt="Givin Logo" className="app-logo" style={{ opacity: 0.9 }} />
+            <img src={logo} alt="Givin Logo" className="app-logo" style={{ opacity: 0.9 }} />
           </div>
         </div> */}
         
