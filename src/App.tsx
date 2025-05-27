@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Dashboard from './pages/Dashboard'
 import NotFound from './pages/NotFound'
 import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import PageTransition from './components/PageTransition'
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </PageTransition>
+      <Footer />
     </div>
   )
 }
