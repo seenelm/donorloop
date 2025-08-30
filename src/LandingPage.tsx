@@ -16,7 +16,7 @@ const LandingPage: React.FC = () => {
             <p className="hero-subtitle">Upload your organization's data and unlock powerful insights to boost your fundraising efforts</p>
             
             <div className="hero-buttons">
-              <a href="https://app.givin.io" className="cta-button">Try Givin Free</a>
+              <a href="https://app.donorloop.io" className="cta-button">Try DonorLoop Free</a>
               <button className="secondary-button">
                 Learn how it works
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

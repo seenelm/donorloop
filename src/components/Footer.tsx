@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-logo-section">
           <Link to="/">
-            <img src={logo} alt="Givin Logo" className="footer-logo" />
+            <img src={logo} alt="DonorLoop Logo" className="footer-logo" />
           </Link>
           <p className="footer-address">300 Beale Street, San Francisco, CA 94105</p>
         </div>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
       </div>
       
       <div className="footer-bottom">
-        <p className="copyright">© {currentYear} Givin AI LLC. All rights reserved.</p>
+        <p className="copyright">© {currentYear} DonorLoop AI LLC. All rights reserved.</p>
         <div className="footer-bottom-links">
           <a href="#" className="footer-link">Terms & Conditions</a>
           <a href="#" className="footer-link">Privacy Policy</a>

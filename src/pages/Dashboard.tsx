@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
         
         <div className="dashboard-content">
           <div className="dashboard-welcome">
-            <h2>Welcome to Givin Dashboard</h2>
+            <h2>Welcome to DonorLoop Dashboard</h2>
             <p>
               Your AI assistant for fundraising optimization is ready to help you analyze 
               990 XML financial data and enhance your organization's fundraising efforts.

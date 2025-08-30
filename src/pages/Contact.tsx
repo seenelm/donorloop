@@ -13,14 +13,14 @@ const Contact: React.FC = () => {
           <div className="contact-info">
             <h2>Get in Touch</h2>
             <p>
-              Have questions about how Givin can help your non-profit organization?
+              Have questions about how DonorLoop can help your non-profit organization?
               Our team is here to help you maximize your fundraising efforts.
             </p>
             
             <div className="contact-methods">
               <div className="contact-method">
                 <h3>Email</h3>
-                <p>support@givin.org</p>
+                <p>support@donorloop.io</p>
               </div>
               
               <div className="contact-method">

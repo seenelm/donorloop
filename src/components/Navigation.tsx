@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
     <div className="header-container">
       <header className="header">
         <Link to="/">
-          <img src={logo} alt="Givin Logo" className="logo" />
+          <img src={logo} alt="DonorLoop Logo" className="logo" />
         </Link>
         
         {/* Desktop Navigation */}
@@ -68,7 +68,7 @@ const Navigation: React.FC = () => {
               </Link>
             </nav>
             
-            <a href="https://app.givin.io" className="cta-button desktop-cta">Get Started</a>
+            <a href="https://app.donorloop.io" className="cta-button desktop-cta">Get Started</a>
           </>
         )}
         
@@ -118,7 +118,7 @@ const Navigation: React.FC = () => {
                 Contact Us
               </Link>
               <a 
-                href="https://app.givin.io" 
+                href="https://app.donorloop.io" 
                 className="mobile-nav-link dashboard-link"
                 onClick={() => setMobileMenuOpen(false)}
               >

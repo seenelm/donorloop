@@ -7,12 +7,12 @@ const About: React.FC = () => {
   return (
     <div className="page-container">
       <div className="container">
-        <h1>About Givin</h1>
+        <h1>About DonorLoop</h1>
         <div className="about-content">
           <section className="about-section">
             <h2>Our Mission</h2>
             <p>
-              At Givin, we're dedicated to empowering non-profit organizations with powerful AI-driven insights
+              At DonorLoop, we're dedicated to empowering non-profit organizations with powerful AI-driven insights
               to optimize their fundraising efforts and maximize their impact.
             </p>
           </section>
@@ -20,7 +20,7 @@ const About: React.FC = () => {
           <section className="about-section">
             <h2>What We Do</h2>
             <p>
-              Givin provides comprehensive analysis of 990 XML financial data, donor acquisition strategies, 
+              DonorLoop provides comprehensive analysis of 990 XML financial data, donor acquisition strategies, 
               and fundraising campaign optimization tools. Our platform leverages the latest in AI technology
               to help you make data-driven decisions that increase your organization's effectiveness.
             </p>
