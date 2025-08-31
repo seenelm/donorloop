@@ -46,8 +46,9 @@ const Navigation: React.FC = () => {
   return (
     <div className="header-container">
       <header className="header">
-        <Link to="/">
+        <Link to="/" className="logo-container">
           <img src={logo} alt="DonorLoop Logo" className="logo" />
+          <span className="logo-text">DonorLoop</span>
         </Link>
         
         {/* Desktop Navigation */}

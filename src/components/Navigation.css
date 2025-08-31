@@ -28,9 +28,22 @@
   position: relative;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .logo {
-  height: 48px;
+  height: 36px;
   width: auto;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-color, #333);
+  margin-left: 8px;
 }
 
 .nav {
